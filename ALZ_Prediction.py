@@ -11,6 +11,39 @@ warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
+def about_proj():
+    st.header("Project Title")
+
+    st.markdown(
+        """A Customized Machine Learning and Deep Learning Model for Predicting the Risk of Alzheimer’s Disease at an 
+        Early Stage Using Magnetic Resonance Imaging Data.""")
+   
+    st.header("Funding Details")
+
+
+    st.markdown(
+        """The research leading to these results has received funding from 
+        the Research Council (TRC) of the Sultanate of Oman under the Block Funding Program BFP/RGP/ICT/21/148""")
+    st.header("Project Team")
+
+    st.markdown(
+        """Dr. Abraham Varghese 
+           Dr. Vinu Sherimon 
+           Dr. Ben George 
+           Dr. Prashanth Gouda (MBBS, MD, MRCPCH) *  
+
+        Institutional Affiliation:  
+            University of Technology and Applied Sciences (UTAS), Muscat and  
+            *National University of Science and Technology (NUST), Oman.""")
+    
+    st.header("Source of Data for the Models")
+
+    st.markdown(
+        """The data utilized in this study was obtained from the Alzheimer's Disease Neuroimaging Initiative (ADNI)
+        through their standardized datasets. ADNI is a major research initiative focused on understanding and identifying 
+        biomarkers for Alzheimer's disease. Access to the data can be requested through the 
+        ADNI website (https://ida.loni.usc.edu/login.jsp?project=ADNI) after registering and obtaining approval.""")
+
 def about_ALZ():
     
     st.header("Understanding Alzheimer's Disease")
@@ -130,7 +163,7 @@ def home():
 
     st.title("Deciphering Alzheimer's Disease Prediction and Progression with Explanations")
 
-    image = Image.open("bg.jpg")
+    image = Image.open("alz_bg.png")
 
     resized_image = image.resize((800, image.size[1]))
 
@@ -143,10 +176,13 @@ def home():
         unsafe_allow_html=True
     )
 
+    if st.button("Project Details - Members - Funding"):
+        about_proj()   
+        
     if st.button("Explore About the Application"):
         about_ALZ()
 
-    # Create a button to navigate to the "About the Features" section
+    
     if st.button("Discover About the Features"):
         about_features()
         
