@@ -26,15 +26,14 @@ def about_proj():
         the Research Council (TRC) of the Sultanate of Oman under the Block Funding Program BFP/RGP/ICT/21/148""")
     st.header("Project Team")
 
-    st.markdown(
-        """Dr. Abraham Varghese 
-           Dr. Vinu Sherimon 
-           Dr. Ben George 
-           Dr. Prashanth Gouda (MBBS, MD, MRCPCH) *  
-
-        Institutional Affiliation:  
-            University of Technology and Applied Sciences (UTAS), Muscat and  
-            *National University of Science and Technology (NUST), Oman.""")
+    st.markdown("Dr. Abraham Varghese")
+    st.markdown("Dr. Vinu Sherimon")
+    st.markdown("Dr. Ben George")
+    st.markdown("Dr. Prashanth Gouda (MBBS, MD, MRCPCH) *")
+    st.markdown("\n")
+    st.markdown("**Institutional Affiliation:**")
+    st.markdown("University of Technology and Applied Sciences (UTAS), Muscat and")
+    st.markdown("*National University of Science and Technology (NUST), Oman.")
     
     st.header("Source of Data for the Models")
 
