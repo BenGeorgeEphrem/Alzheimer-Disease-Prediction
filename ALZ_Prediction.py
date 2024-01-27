@@ -164,9 +164,9 @@ def home():
 
     image = Image.open("alz_bg.png")
 
-    resized_image = image.resize((800, image.size[1]))
-
-    st.image(resized_image, width=800)
+    #resized_image = image.resize((800, image.size[1]))
+    st.image(image)
+    #st.image(resized_image, width=800)
 
     st.markdown(
         """
