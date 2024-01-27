@@ -160,7 +160,7 @@ def about_features():
 
 def home():
 
-    st.title("Deciphering Alzheimer's Disease Prediction and Progression with Explanations")
+    st.title("Demystifying Alzheimer's Disease Prediction and Progression")
 
     image = Image.open("alz_bg.png")
 
